@@ -14,11 +14,18 @@ def invsquare(x):
         t.right(90)
 def backsquare(x):
     for i in range(4):
-        t.forward(x)
+        t.backward(x)
         t.right(90)  
+def bottomleftsquare(x):
+    for i in range(4):
+        t.backward(x)
+        t.left(90)
 
 square(200)
 invsquare(200)
+backsquare(200)
+bottomleftsquare(200)
+
 t.shapesize(5, 7, 8)
 
 
