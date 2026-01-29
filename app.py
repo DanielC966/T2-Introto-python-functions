@@ -10,12 +10,12 @@ def square(x):
         t.left(90)
 def invsquare(x):
     for i in range(4):
-    t.forward(x)
-    t.right(90)
+        t.forward(x)
+        t.right(90)
 def backsquare(x):
     for i in range(4):
-    t.forward(x)
-    t.right(90)  
+        t.forward(x)
+        t.right(90)  
 
 square(200)
 invsquare(200)
