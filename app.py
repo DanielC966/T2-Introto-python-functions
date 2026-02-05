@@ -3,6 +3,7 @@ from turtle import *
 t = Turtle()
 
 t.shape('turtle')
+t.speed('fastest')
 
 def square(x):
     for i in range(4):
@@ -21,12 +22,17 @@ def bottomleftsquare(x):
         t.backward(x)
         t.left(90)
 
-square(200)
-invsquare(200)
-backsquare(200)
-bottomleftsquare(200)
 
-t.shapesize(5, 7, 8)
+x=200
+size=[5, 7, 8]
+
+for i in range(4):
+    square(x)
+    invsquare(x)
+    backsquare(x)
+    bottomleftsquare(x)
+    x+=30
+    t.shapesize(size[0]+15, size[1]+15, size[2]+15)
 
 
 turtle.done()
